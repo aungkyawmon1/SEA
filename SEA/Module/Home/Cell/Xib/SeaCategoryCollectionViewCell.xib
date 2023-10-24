@@ -18,32 +18,32 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blt-dJ-Wr3">
-                        <rect key="frame" x="8" y="107" width="134" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="8" y="109.66666666666667" width="134" height="14.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-D9-Hp2">
-                        <rect key="frame" x="40" y="29" width="70" height="70"/>
+                        <rect key="frame" x="50" y="51.666666666666657" width="50" height="50"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 275" translatesAutoresizingMaskIntoConstraints="NO" id="rMr-VN-clR">
-                                <rect key="frame" x="17" y="17" width="36" height="36"/>
+                                <rect key="frame" x="13" y="13.000000000000007" width="24" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Fwt-im-STL"/>
-                                    <constraint firstAttribute="width" constant="36" id="qUu-tQ-rP9"/>
+                                    <constraint firstAttribute="height" constant="24" id="Fwt-im-STL"/>
+                                    <constraint firstAttribute="width" constant="24" id="qUu-tQ-rP9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="rMr-VN-clR" firstAttribute="centerX" secondItem="gU7-D9-Hp2" secondAttribute="centerX" id="8dA-oD-w1K"/>
-                            <constraint firstAttribute="width" constant="70" id="eAC-Gh-C1A"/>
-                            <constraint firstAttribute="height" constant="70" id="gIv-YT-pNy"/>
+                            <constraint firstAttribute="width" constant="50" id="eAC-Gh-C1A"/>
+                            <constraint firstAttribute="height" constant="50" id="gIv-YT-pNy"/>
                             <constraint firstItem="rMr-VN-clR" firstAttribute="centerY" secondItem="gU7-D9-Hp2" secondAttribute="centerY" id="gUR-B4-dMO"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="35"/>
+                                <integer key="value" value="25"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -58,13 +58,17 @@
                 <constraint firstItem="blt-dJ-Wr3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="zHd-1O-Oop"/>
             </constraints>
             <size key="customSize" width="150" height="132"/>
+            <connections>
+                <outlet property="ivImage" destination="rMr-VN-clR" id="Dg5-TW-abI"/>
+                <outlet property="lblName" destination="blt-dJ-Wr3" id="eJM-Zw-96i"/>
+            </connections>
             <point key="canvasLocation" x="54.961832061068698" y="48.591549295774648"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Group 275" width="25" height="30"/>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

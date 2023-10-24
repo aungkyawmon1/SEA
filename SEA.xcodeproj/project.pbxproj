@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0534350F2AE7E3500023BB98 /* EmptyViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534350D2AE7E3500023BB98 /* EmptyViewCollectionViewCell.swift */; };
+		053435102AE7E3500023BB98 /* EmptyViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0534350E2AE7E3500023BB98 /* EmptyViewCollectionViewCell.xib */; };
+		053435132AE7E7760023BB98 /* CategoryVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435122AE7E7760023BB98 /* CategoryVO.swift */; };
+		053435162AE7E9600023BB98 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053435152AE7E9600023BB98 /* MainTabBarController.swift */; };
+		0534351C2AE7E9DD0023BB98 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534351A2AE7E9DD0023BB98 /* WalletViewController.swift */; };
+		0534351D2AE7E9DD0023BB98 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0534351B2AE7E9DD0023BB98 /* WalletViewController.xib */; };
+		053435212AE7E9FA0023BB98 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534351F2AE7E9FA0023BB98 /* MoreViewController.swift */; };
+		053435222AE7E9FA0023BB98 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053435202AE7E9FA0023BB98 /* MoreViewController.xib */; };
 		05CAB6C22AE7B9B60023875A /* UpComingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CAB6C02AE7B9B60023875A /* UpComingCollectionViewCell.swift */; };
 		05CAB6C32AE7B9B60023875A /* UpComingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05CAB6C12AE7B9B60023875A /* UpComingCollectionViewCell.xib */; };
 		05CAB6C62AE7C15D0023875A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CAB6C52AE7C15D0023875A /* CardView.swift */; };
@@ -40,6 +48,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0534350D2AE7E3500023BB98 /* EmptyViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		0534350E2AE7E3500023BB98 /* EmptyViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		053435122AE7E7760023BB98 /* CategoryVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVO.swift; sourceTree = "<group>"; };
+		053435152AE7E9600023BB98 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0534351A2AE7E9DD0023BB98 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		0534351B2AE7E9DD0023BB98 /* WalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewController.xib; sourceTree = "<group>"; };
+		0534351F2AE7E9FA0023BB98 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		053435202AE7E9FA0023BB98 /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		05CAB6C02AE7B9B60023875A /* UpComingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingCollectionViewCell.swift; sourceTree = "<group>"; };
 		05CAB6C12AE7B9B60023875A /* UpComingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpComingCollectionViewCell.xib; sourceTree = "<group>"; };
 		05CAB6C52AE7C15D0023875A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -85,6 +101,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053435112AE7E7610023BB98 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				053435122AE7E7760023BB98 /* CategoryVO.swift */,
+			);
+			path = VO;
+			sourceTree = "<group>";
+		};
+		053435142AE7E94A0023BB98 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				053435152AE7E9600023BB98 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		053435172AE7E9AA0023BB98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05E4894F2AE7B0890001A891 /* Cell */,
+				05E489432AE7B01A0001A891 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		053435182AE7E9B40023BB98 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				053435192AE7E9BF0023BB98 /* ViewController */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		053435192AE7E9BF0023BB98 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0534351A2AE7E9DD0023BB98 /* WalletViewController.swift */,
+				0534351B2AE7E9DD0023BB98 /* WalletViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0534351E2AE7E9E70023BB98 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				053435232AE7E9FD0023BB98 /* ViewController */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		053435232AE7E9FD0023BB98 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0534351F2AE7E9FA0023BB98 /* MoreViewController.swift */,
+				053435202AE7E9FA0023BB98 /* MoreViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		05CAB6C42AE7C14D0023875A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +198,7 @@
 		05E489292AE7AF5C0001A891 /* SEA */ = {
 			isa = PBXGroup;
 			children = (
+				053435112AE7E7610023BB98 /* VO */,
 				05CAB6C42AE7C14D0023875A /* Utility */,
 				05E4894A2AE7B0620001A891 /* Extension */,
 				05E489422AE7B0140001A891 /* Module */,
@@ -140,8 +216,10 @@
 		05E489422AE7B0140001A891 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				05E4894F2AE7B0890001A891 /* Cell */,
-				05E489432AE7B01A0001A891 /* ViewController */,
+				0534351E2AE7E9E70023BB98 /* More */,
+				053435182AE7E9B40023BB98 /* Wallet */,
+				053435172AE7E9AA0023BB98 /* Home */,
+				053435142AE7E94A0023BB98 /* MainTabBar */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -201,6 +279,7 @@
 				05E489622AE7B6470001A891 /* UpComingTableViewCell.swift */,
 				05CAB6C02AE7B9B60023875A /* UpComingCollectionViewCell.swift */,
 				05CAB6CB2AE7CE910023875A /* DetailSliderCollectionViewCell.swift */,
+				0534350D2AE7E3500023BB98 /* EmptyViewCollectionViewCell.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -215,6 +294,7 @@
 				05E489632AE7B6470001A891 /* UpComingTableViewCell.xib */,
 				05CAB6C12AE7B9B60023875A /* UpComingCollectionViewCell.xib */,
 				05CAB6CC2AE7CE910023875A /* DetailSliderCollectionViewCell.xib */,
+				0534350E2AE7E3500023BB98 /* EmptyViewCollectionViewCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -286,10 +366,13 @@
 				05CAB6C32AE7B9B60023875A /* UpComingCollectionViewCell.xib in Resources */,
 				05E489582AE7B0B10001A891 /* HomeSliderTableViewCell.xib in Resources */,
 				05E489592AE7B0B10001A891 /* HomeSliderCollectionViewCell.xib in Resources */,
+				053435222AE7E9FA0023BB98 /* MoreViewController.xib in Resources */,
 				05E489342AE7AF5E0001A891 /* Assets.xcassets in Resources */,
 				05CAB6D32AE7D01F0023875A /* CustomTitle.xib in Resources */,
+				0534351D2AE7E9DD0023BB98 /* WalletViewController.xib in Resources */,
 				05E489322AE7AF5C0001A891 /* Main.storyboard in Resources */,
 				05E489492AE7B03E0001A891 /* HomeViewController.xib in Resources */,
+				053435102AE7E3500023BB98 /* EmptyViewCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,15 +385,20 @@
 			files = (
 				05E4892F2AE7AF5C0001A891 /* ViewController.swift in Sources */,
 				05E4894C2AE7B0700001A891 /* UICollectionView+Extension.swift in Sources */,
+				0534351C2AE7E9DD0023BB98 /* WalletViewController.swift in Sources */,
+				053435162AE7E9600023BB98 /* MainTabBarController.swift in Sources */,
 				05E489642AE7B6470001A891 /* UpComingTableViewCell.swift in Sources */,
 				05E4892B2AE7AF5C0001A891 /* AppDelegate.swift in Sources */,
+				053435132AE7E7760023BB98 /* CategoryVO.swift in Sources */,
 				05E489542AE7B0A80001A891 /* HomeSliderCollectionViewCell.swift in Sources */,
 				05E4892D2AE7AF5C0001A891 /* SceneDelegate.swift in Sources */,
 				05CAB6CD2AE7CE910023875A /* DetailSliderCollectionViewCell.swift in Sources */,
 				05E489482AE7B03E0001A891 /* HomeViewController.swift in Sources */,
 				05CAB6C62AE7C15D0023875A /* CardView.swift in Sources */,
+				0534350F2AE7E3500023BB98 /* EmptyViewCollectionViewCell.swift in Sources */,
 				05E489602AE7B1FF0001A891 /* SeaCategoryCollectionViewCell.swift in Sources */,
 				05CAB6C22AE7B9B60023875A /* UpComingCollectionViewCell.swift in Sources */,
+				053435212AE7E9FA0023BB98 /* MoreViewController.swift in Sources */,
 				05E4894E2AE7B0760001A891 /* UITableView+Extension.swift in Sources */,
 				05CAB6D52AE7D0940023875A /* CustomTitle.swift in Sources */,
 				05E489552AE7B0A80001A891 /* HomeSliderTableViewCell.swift in Sources */,

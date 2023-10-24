@@ -21,9 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
         window.overrideUserInterfaceStyle = .light
               
-        let movieVC = HomeViewController()
-        let navVc = UINavigationController(rootViewController: movieVC)
-        window.rootViewController = navVc
+        window.rootViewController = MainTabBarController()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

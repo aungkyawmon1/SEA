@@ -11,6 +11,8 @@ class HomeSliderTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionViewSliders: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
+    
+    weak var delegate: HomeDetailDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,7 +58,7 @@ extension HomeSliderTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        delegate?.navigateToDetail()
     }
     
     

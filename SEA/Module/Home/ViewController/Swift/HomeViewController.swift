@@ -7,7 +7,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+protocol HomeDetailDelegate: AnyObject {
+    func navigateToDetail()
+}
+
+class HomeViewController: UIViewController, HomeDetailDelegate {
 
     @IBOutlet weak var tableViewHome: UITableView!
     
@@ -38,7 +42,11 @@ class HomeViewController: UIViewController {
     }
 
 
-
+    func navigateToDetail() {
+        let vc = DetailViewController()
+        vc.modalPresentationStyle = .overFullScreen //or .overFullScreen for transparency
+        self.present(vc, animated: true, completion: nil)
+    }
 
 }
 
@@ -54,9 +62,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeReuseCell(type: HomeSliderTableViewCell.self, indexPath: indexPath)
+            cell.delegate = self
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeReuseCell(type: SeaCategoryTableViewCell.self, indexPath: indexPath)
+            cell.delegate = self
             return cell
         } else {
             let cell = tableView.dequeReuseCell(type: UpComingTableViewCell.self, indexPath: indexPath)
@@ -65,11 +75,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 2{
-            let vc = DetailViewController()
-            vc.modalPresentationStyle = .overFullScreen //or .overFullScreen for transparency
-            self.present(vc, animated: true, completion: nil)
-        }
+        
     }
     
     

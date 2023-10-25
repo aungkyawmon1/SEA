@@ -17,6 +17,8 @@ class HomeViewController: UIViewController, HomeDetailDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
         let appearance = UINavigationBarAppearance()
@@ -28,7 +30,19 @@ class HomeViewController: UIViewController, HomeDetailDelegate {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         navigationItem.titleView = CustomTitle(frame: .zero)
+        
+        setupNoti()
+        
         registerTableCells()
+    }
+    
+    func setupNoti() {
+        let notiButtonItem = UIBarButtonItem(image: UIImage(named: "Leading-icon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(onTapNoti))
+        navigationItem.rightBarButtonItem = notiButtonItem
+    }
+    
+    @objc func onTapNoti() {
+        
     }
     
     func registerTableCells() {
